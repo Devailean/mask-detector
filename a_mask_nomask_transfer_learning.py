@@ -22,8 +22,8 @@ def add_random_noise(x):
 # ------------/on_mask
 # ------------/off_mask
 
-TRAINING_DIR = "/Users/suyong/Desktop/deepsummer_dataset/train_set"
-VALIDATION_DIR = "/Users/suyong/Desktop/deepsummer_dataset/test_set"
+TRAINING_DIR = "/Users/suyong/Desktop/deepsummer_dataset/train_set" #your train set
+VALIDATION_DIR = "/Users/suyong/Desktop/deepsummer_dataset/test_set" #your test set
 
 batch_size = 8
 
