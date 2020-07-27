@@ -15,8 +15,8 @@ def add_random_noise(x):
 
 
 # Set your dataset directory
-TRAINING_DIR = "/Users/suyong/Desktop/deepsummer_dataset/webcam_dataset"
-VALIDATION_DIR = "/Users/suyong/Desktop/deepsummer_dataset/test_set"
+TRAINING_DIR = "/Users/suyong/Desktop/deepsummer_dataset/webcam_dataset" #your train set with new data which is your webcam images that you have saved earlier
+VALIDATION_DIR = "/Users/suyong/Desktop/deepsummer_dataset/test_set" #your predetermined train set
 
 batch_size = 8
 
@@ -86,7 +86,7 @@ out_layer = tf.keras.layers.Dense(2, activation='softmax')(out_layer)
 model = tf.keras.models.Model(base_model.input, out_layer)
 
 # Load saved weights
-model.load_weights("/Users/suyong/Desktop/정리/공부/머신러닝/python/saved_model.h5")
+model.load_weights("/Users/suyong/Desktop/정리/공부/머신러닝/python/saved_model.h5") #your model which you've created
 
 model.summary()
 
